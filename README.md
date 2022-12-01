@@ -39,10 +39,8 @@ Windows
 ```sh
 $ python main.py
 ```
-
-<div align="center">
 ## LAVALINK SERVER
-
+<div align="center">
  <h1>Secure (HTTPS / SSL)</h1>
 
 HOST
