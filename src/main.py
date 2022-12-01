@@ -13,7 +13,10 @@ for f in os.listdir("./cogs"):
 	if f.endswith(".py"):
 		bot.load_extension("cogs." + f[:-3])
 
+# Please replace botToken = os.environ['TOKEN'] WITH botToken="<PUT YOUR TOKEN HERE>" IF you are not using docker
+# botToken="<PUT YOUR TOKEN HERE>"
 
+		
 botToken = os.environ['TOKEN']
 
 bot.run(botToken)
