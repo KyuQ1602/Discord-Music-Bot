@@ -45,13 +45,16 @@ $ python main.py
  
 Secure (HTTPS / SSL)
 
-HOST
+      HOST
+      
 lavalink.kyuk.my.id
 
-PORT
+      PORT
+      
 443
 
-PASSWORD
+    PASSWORD
+    
 www.kyuk.my.id
 
 Not Secure (HTTP)
