@@ -45,20 +45,30 @@ $ python main.py
  
 Secure (HTTPS / SSL)
 
-      HOST
+HOST
       
 lavalink.kyuk.my.id
 
-      PORT
+PORT
       
 443
 
-    PASSWORD
+PASSWORD
     
 www.kyuk.my.id
 
+
 Not Secure (HTTP)
-HOST      : lavalink.kyuk.my.id
-PORT      : 80
-PASSWORD  : www.kyuk.my.id
+
+HOST
+
+lavalink.kyuk.my.id
+
+PORT
+
+80
+
+PASSWORD
+
+www.kyuk.my.id
 
