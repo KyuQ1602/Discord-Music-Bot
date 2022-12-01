@@ -40,10 +40,10 @@ Windows
 $ python main.py
 ```
 
-<div align="center">>
-<h1>Lavalink Server</h1>
- 
-Secure (HTTPS / SSL)
+<div align="center">
+## LAVALINK SERVER
+
+ <h1>Secure (HTTPS / SSL)</h1>
 
 HOST
       
@@ -58,7 +58,7 @@ PASSWORD
 www.kyuk.my.id
 
 
-Not Secure (HTTP)
+ <h1>Not Secure (HTTP)</h1>
 
 HOST
 
