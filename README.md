@@ -42,15 +42,14 @@ $ python main.py
 
 
 ## Lavalink server
-<p><div align="center"><b>Host</b></div></p>
-<p><div align="center">kyuk.my.id</div></p>
+<h1>Lavalink Server</h1>
+Secure (HTTPS / SSL)
+HOST      : lavalink.kyuk.my.id
+PORT      : 443
+PASSWORD  : www.kyuk.my.id
 
-<p><div align="center"><b>Password</b></div></p>
-<p><div align="center">www.kyuk.my.id</div></p>
-
-<p><div align="center"><b>Port</b></div></p>
-<p><div align="center">2333</div></p>
-
-<p><div align="center"><b>Secure</b></div></p>
-<p><div align="center">false</div></p>
+Not Secure (HTTP)
+HOST      : lavalink.kyuk.my.id
+PORT      : 80
+PASSWORD  : www.kyuk.my.id
 
