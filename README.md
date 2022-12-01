@@ -40,7 +40,7 @@ Windows
 $ python main.py
 ```
 
-
+<div align="center">>
 <h1>Lavalink Server</h1>
  
 Secure (HTTPS / SSL)
@@ -71,4 +71,4 @@ PORT
 PASSWORD
 
 www.kyuk.my.id
-
+</div>
