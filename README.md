@@ -28,11 +28,11 @@ discord
 
 Linux/macOS
 ```sh
-$ python3 -m pip install -U "discord.py[voice]"
+$ python3 -m pip install -U "py-cord[voice]"
 ```
 Windows
 ```sh
-$ py -3 -m pip install -U discord.py[voice]
+$ py -3 -m pip install -U py-cord[voice]
 ```
 
 3. Install wavelink
@@ -40,7 +40,7 @@ $ py -3 -m pip install -U discord.py[voice]
 ```sh
 $ pip install wavelink
 ```
-4. Insert your bot token to settings.py
+4. Insert your bot token to main.py
 You can get your bot token from https://discord.com/developers/applications
 
 5. Finally, you can start the bot
