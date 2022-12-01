@@ -6,11 +6,25 @@
 - `!leave` make bot to leave your voice channel
 - `!play` play the given song
 
+## Setup with docker (RECOMENDED!)
+1. Download and install docker
+2. Build the docker image
+```sh
+$ docker build . -t discord
+```
+3. Run the docker images
+```sh
+$ docker run -d \
+-e TOKEN=<YOUR BOT TOKEN HERE> \
+--restart always \
+--name discord \
+discord
+```
 
-
-## Setup
+## Setup with python
 1. Download and install python version `3.6` or higher
 2. Install discord.py
+
 
 Linux/macOS
 ```sh
