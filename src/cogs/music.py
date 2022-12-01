@@ -12,7 +12,7 @@ class Music(commands.Cog):
 
     async def create_nodes(self):
         await self.bot.wait_until_ready()
-        await wavelink.NodePool.create_node(bot=self.bot, host="kyuk.my.id", port="2333", password="www.kyuk.my.id", region="asia")
+        await wavelink.NodePool.create_node(bot=self.bot, host="lavalink.kyuk.my.id", port="443", password="www.kyuk.my.id", https=True)
 
     async def user_connectivity(self,ctx: commands.Context):
         if not getattr(ctx.author.voice, 'channel', None):
@@ -45,7 +45,7 @@ class Music(commands.Cog):
         mbed=discord.Embed(title=f"Connected to {channel.name}{channel}", color=discord.Color.from_rgb(255, 255, 255))
         await ctx.send(embed=mbed)
 
-    @commands.command(name='disconnect', aliases=['dc', 'leave'], help='Keluar dari voice')
+    @commands.command(name='disconnect', aliases=['dc', 'leave'], help='Leave voice channel')
     async def disconnect_command(self,ctx: commands.Context):
         if await self.user_connectivity(ctx) == False:
             return
@@ -57,10 +57,10 @@ class Music(commands.Cog):
             except Exception:
                 await ctx.send(embed=discord.Embed(description='Failed to destroy!', color=discord.Color.from_rgb(255, 255, 255)))
 
-    @commands.command(name='play', aliases=['p'], help='Memutar lagu yang di berikan')
+    @commands.command(name='play', aliases=['p'], help='Play given song')
     async def play_command(self,ctx: commands.Context, *, search: wavelink.YouTubeTrack):
         if not getattr(ctx.author.voice, 'channel', None):
-            return await ctx.send(embed=discord.Embed(description=f'Coba lagi setelah join kedalam voice', color=discord.Color.from_rgb(128, 67, 255)))  
+            return await ctx.send(embed=discord.Embed(description=f'Try again after joining a voice channel', color=discord.Color.from_rgb(128, 67, 255)))  
         elif not ctx.voice_client:
             vc: wavelink.Player = await ctx.author.voice.channel.connect(cls=wavelink.Player)
         else:
@@ -71,5 +71,5 @@ class Music(commands.Cog):
         await ctx.send(embed=playString)
     
 
-async def setup(bot):
-    await bot.add_cog(Music(bot))
+def setup(bot):
+    bot.add_cog(Music(bot))
